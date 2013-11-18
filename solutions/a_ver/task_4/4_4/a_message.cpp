@@ -1,6 +1,7 @@
 #include "a_message.h"
 
 #include <stdexcept>
+#include <sstream>
 
 task4_4::a_message::a_message( std::istream& inp )
 {
@@ -24,5 +25,12 @@ const char task4_4::a_message::type() const
 }
 const std::string task4_4::a_message::str() const
 {
-	return "";
+    std::stringstream stream_str;
+
+    stream_str << "a_message";
+    stream_str << "(";
+    stream_str.write(content_, content_size);
+    stream_str << ")";
+
+	return stream_str.str();
 }

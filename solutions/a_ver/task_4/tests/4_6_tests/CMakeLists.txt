@@ -1,5 +1,5 @@
 add_definitions( -DSOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}" )
-add_definitions( -DBINARY_DIR="${BINARIES_DIRECTORY}" )
+add_definitions( -DBINARY_DIR="${CMAKE_CURRENT_BINARY_DIR}" )
 
 set(COMPONENT_NAME 4_6)
 set(SOURCE_DIR ${Task_4_SOURCE_DIR}/${COMPONENT_NAME}/)
