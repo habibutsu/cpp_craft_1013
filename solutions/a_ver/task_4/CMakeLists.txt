@@ -9,9 +9,6 @@ endif(UNIX)
 
 project(Task_4)
 
-
-#add_subdirectory(4_4)
-
 add_subdirectory(tests)
 
 enable_testing()
