@@ -21,7 +21,7 @@ if(Boost_FOUND)
         solution_tests.cpp
         test_registrator.cpp)
     target_link_libraries(
-        test_${COMPONENT_NAME} ${Boost_LIBRARIES} lib_${COMPONENT_NAME})
+        test_${COMPONENT_NAME} ${Boost_LIBRARIES} lib_${COMPONENT_NAME} pthread)
     enable_testing()
     add_test(test_${COMPONENT_NAME} test_${COMPONENT_NAME})
 else()

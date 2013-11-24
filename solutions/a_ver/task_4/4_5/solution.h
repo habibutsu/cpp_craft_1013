@@ -10,6 +10,7 @@ namespace task4_5
 	class solution
 	{
 	public:
+                const data_type& _data;
 		explicit solution( const data_type& data );
 		int get_min() const;
 		int get_max() const;
